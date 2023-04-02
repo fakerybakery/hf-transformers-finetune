@@ -15,7 +15,12 @@ train_chunks = [train_data[i:i+max_length] for i in range(0, len(train_data), ma
 
 # Set up the training parameters
 optimizer = torch.optim.Adam(model.parameters(), lr=5e-5)
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+if torch.backends.mps.is_available():
+    device = torch.device('mps')
+elif torch.cuda.is_available():
+    device = torch.device('cuda')
+else:
+    device = torch.device('cpu')
 model.to(device)
 
 # Fine-tune the model on each training chunk
