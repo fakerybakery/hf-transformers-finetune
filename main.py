@@ -1,3 +1,6 @@
+# mps-cuda-gpt2-finetune by @fakerybakery on GitHub - github.com/fakerybakery/mps-cuda-gpt2-finetune
+# copyright 2023 mrfakename - all rights reserved
+# commercial use allowed, but please consider adding my username to your model card if you publish your model. this is not required but would be appreciated :) thank you
 import torch
 from transformers import GPT2Tokenizer, GPT2LMHeadModel
 
