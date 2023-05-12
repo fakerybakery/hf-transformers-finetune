@@ -5,7 +5,8 @@ import torch
 from transformers import GPT2Tokenizer, GPT2LMHeadModel
 
 # Set up the tokenizer and model
-tokenizer = GPT2Tokenizer.from_pretrained('gpt2')
+#tokenizer = GPT2Tokenizer.from_pretrained('gpt2')
+tokenizer = GPT2Tokenizer.from_pretrained('gpt2-medium', bos_token='<|startoftext|>', eos_token='<|endoftext|>', pad_token='<|pad|>')
 model = GPT2LMHeadModel.from_pretrained('gpt2')
 
 # Load the training data
