@@ -1,3 +1,6 @@
+# by @fakerybakery on GitHub - github.com/fakerybakery/hf-transformers-finetune
+# copyright 2023 mrfakename - all rights reserved
+# commercial use allowed, but please consider adding my username to your model card if you publish your model. this is not required but would be appreciated :) thank you
 # Grab data from http://www.manythings.org/anki/
 import torch
 from transformers import T5Tokenizer, T5ForConditionalGeneration
